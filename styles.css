@@ -1,0 +1,14 @@
+.navbar-nav .nav-item .nav-link {
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave para el efecto */
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover,
+  .navbar-nav .nav-item.active .nav-link {
+    box-shadow: 0 2px 0 white; /* Cambia el color y la posición según tus preferencias */
+  }
+
+/*Observación,se ponene varios componentes por las jerarquias:
+La definición del selector .navbar-nav .nav-item .nav-link especifica que solo se aplicará a elementos .nav-link que
+ sean descendientes de elementos .nav-item, que a su vez sean descendientes de elementos .navbar-nav. Si hay otro elemento
+ .nav-link que no cumple con esta estructura específica, ese elemento no se verá afectado por este conjunto particular de estilos.
+*/
