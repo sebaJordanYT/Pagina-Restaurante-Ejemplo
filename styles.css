@@ -14,36 +14,81 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 */
 
 .banner {
-  width: 100%;
-  height: 600px;
-  animation: banner 10s infinite linear alternate;
-  background-size: 100% 100%;
   position: relative;
+  width: 100%;
+  height: calc( 100vh - 50px );
+  background-color: #F5F5F5;
+  background-size: cover;
+  background-position: center;
+  transition: all .1s ease-in-out;
+  background-image: url('images/pizzaBanner.jpg');
+  animation: bannerEffect 10s infinite linear; //Linear para que siempre se mantenga a la misma velocidad, 28 ya que 28/4 da 7, 7 segundos estará cada imagen en el banner
+}
+
+.banner-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  background-color: rgba(0, 22, 40, .6);
   display: flex;
-  justify.content: center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-@keyframes banner {
-  0%, 20% {
-    background-image: url("");
+.banner-content h1{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.banner-content a{
+  text-decoration: none;
+  color: #FFF;
+  padding: 9px 20px;
+  border: 1px solid #FFF;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out; //Todas las propiedades que cambien lo harán en 3 milisegundos
+}
+
+.banner-content a:hover{
+  background-color: #FFF;
+  color: #333;
+}
+
+//Si hay 4 imágnees entonces me toca dividir el 100% de la animación entre 4:
+@keyframes bannerEffect { 
+  0%{
+    background-image: url('images/pizzaBanner.jpg');
   }
-  25%, 45% {
-    background-image: url("");
+  25%{
+    background-image: url('images/pizzaBanner.jpg');
   }
-  50%, 70% {
-    background-image: url("");
+  26%{
+    background-image: url('images/pizzaPortada1.jpg');
+  }
+  50%{
+    background-image: url('images/pizzaPortada1.jpg');
+  }
+  51%{
+    background-image: url('images/pizzaBanner.jpg');
+  }
+  75%{
+    background-image: url('images/pizzaBanner.jpg');
+  }
+  76%{
+    background-image: url('images/pizzaPortada1.jpg');
+  }
+  100%{
+    background-image: url('images/pizzaPortada1.jpg');
   }
 }
 
-
-
-
-
-
-
-
-
+//-------------------------------
 
 
 .scrolling-container {
