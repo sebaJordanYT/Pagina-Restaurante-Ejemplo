@@ -1,8 +1,8 @@
 .navbar-nav .nav-item .nav-link {
     transition: box-shadow 0.3s ease; /* Agrega una transición suave para el efecto */
-  }
+}
   
-  .navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:hover,
   .navbar-nav .nav-item.active .nav-link {
     box-shadow: 0 2px 0 white; /* Cambia el color y la posición según tus preferencias */
   }
@@ -22,7 +22,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   background-position: center;
   transition: all .1s ease-in-out;
   background-image: url('images/pizzaBanner.jpg');
-  animation: bannerEffect 10s infinite linear; //Linear para que siempre se mantenga a la misma velocidad, 28 ya que 28/4 da 7, 7 segundos estará cada imagen en el banner
+  animation: bannerEffect 28s infinite linear;
 }
 
 .banner-content {
@@ -52,7 +52,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   padding: 9px 20px;
   border: 1px solid #FFF;
   text-transform: uppercase;
-  transition: all .3s ease-in-out; //Todas las propiedades que cambien lo harán en 3 milisegundos
+  transition: all .3s ease-in-out;
 }
 
 .banner-content a:hover{
@@ -60,7 +60,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   color: #333;
 }
 
-//Si hay 4 imágnees entonces me toca dividir el 100% de la animación entre 4:
+/*Tengo 4 imagenes por lo tanto cada una se llevara 25 porciento del total de la animacion que es 100, el 0,100 al innicio es para que al pasar de la ultima a la primera no sea brusco*/
 @keyframes bannerEffect { 
   0%{
     background-image: url('images/pizzaBanner.jpg');
@@ -69,10 +69,10 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
     background-image: url('images/pizzaBanner.jpg');
   }
   26%{
-    background-image: url('images/pizzaPortada1.jpg');
+    background-image: url('images/pizzaBanner2.jpg');
   }
   50%{
-    background-image: url('images/pizzaPortada1.jpg');
+    background-image: url('images/pizzaBanner2.jpg');
   }
   51%{
     background-image: url('images/pizzaBanner.jpg');
@@ -81,15 +81,14 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
     background-image: url('images/pizzaBanner.jpg');
   }
   76%{
-    background-image: url('images/pizzaPortada1.jpg');
+    background-image: url('images/pizzaBanner2.jpg');
   }
   100%{
-    background-image: url('images/pizzaPortada1.jpg');
+    background-image: url('images/pizzaBanner2.jpg');
   }
 }
 
-//-------------------------------
-
+/*..........*/
 
 .scrolling-container {
   white-space: nowrap;
