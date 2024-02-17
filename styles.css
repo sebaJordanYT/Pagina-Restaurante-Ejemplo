@@ -1,3 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/*-----------------------navbar--------------------------------*/
 .navbar-nav .nav-item .nav-link {
     transition: box-shadow 0.3s ease; /* Agrega una transición suave para el efecto */
 }
@@ -13,6 +24,8 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
  .nav-link que no cumple con esta estructura específica, ese elemento no se verá afectado por este conjunto particular de estilos.
 */
 
+
+/*-------------------------Banner-----------------------------*/
 .banner {
   position: relative;
   width: 100%;
@@ -22,7 +35,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   background-position: center;
   transition: all .1s ease-in-out;
   background-image: url('images/pizzaBanner.jpg');
-  animation: bannerEffect 28s infinite linear;
+  animation: bannerEffect 20s infinite linear;
 }
 
 .banner-content {
@@ -88,8 +101,59 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   }
 }
 
-/*..........*/
+/*-----------------------------Logo (o frase) autoscroll------------------------------*/
+.logos{
+  overflow: hidden;
+  padding: 20px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
 
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.logos:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide{
+  display: inline-block;
+  animation: 30s slideLogos infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+@keyframes slideLogos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*-----------------------------Imagenes autoscroll------------------------------*/
 .scrolling-container {
   white-space: nowrap;
   overflow: hidden;
