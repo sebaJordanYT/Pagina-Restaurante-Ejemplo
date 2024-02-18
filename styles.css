@@ -305,5 +305,14 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   margin-right: 100px;
 }
 
+@media (max-width: 900px) {
+  .simple-background-2 {
+    flex-direction: column; /* Cambia a column cuando el ancho de la pantalla es menor o igual a 768px */
+  }
+}
 
-
+/*----------------------------Contact info--------------------------------*/
+.contact-info{
+  background-color: black;
+  color: white;    
+}
