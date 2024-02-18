@@ -223,6 +223,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 
   .parallax-content > div {
     margin-bottom: 20px; /* Puedes ajustar el espacio entre divs en pantallas más pequeñas */
+    font-size: 2vh;
   }
 }
 
@@ -234,7 +235,6 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   background-color: #F5F5F5;
   background-size: cover;
   background-position: center;
-  transition: all .1s ease-in-out;
   background-image: url('images/pizzeria.jpg');
 }
 
@@ -255,4 +255,10 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   text-align:center;
   margin-left: 150px;
   margin-right: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .simple-background-content p {
+    margin: 0 10px; /* Ajusta los márgenes para pantallas más pequeñas */
+  }
 }
