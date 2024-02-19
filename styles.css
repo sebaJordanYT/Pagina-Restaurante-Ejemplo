@@ -177,18 +177,9 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 
 /*---------------------------Imagen con efecto parallax-------------------------*/
 .parallax{
-  background: #fff fixed no-repeat 50% 50%; /*fixed fija el fondo, no repeat es para que no se repita la imagen y lo ultimo la centra*/
+  background: #fff url('images/pizzaPortada1B&W.jpg') fixed no-repeat 50% 50%; /*fixed fija el fondo, no repeat es para que no se repita la imagen y lo ultimo la centra*/
   background-size: cover;
   position: relative; /*Para poder poner el before despues necesito que sea relative*/
-}
-
-.parallax:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 #seccion1{
@@ -196,7 +187,6 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   height: 100%;
   padding: 0;
   margin: 0;
-  background-image: url('images/pizzaPortada1B&W.jpg');
 }
 
 .parallax-content{
