@@ -224,7 +224,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 .parallax-js{
   position: absolute;
   width: 100%;
-  background-image: url('images/pizzaPortada1B&W.jpg');
+  background-image: url('images/pizzaNuevaB&W.jpg');
   background-size: cover;
   height: 100vh; /*Debe ser tan alto como la pantalla, y el contenedor chico, que es como la ventana*/
   margin: -105vh 0 0; /*Ajusto el margen segun la posicion inicial de la imagen en la pagina*/
@@ -257,6 +257,18 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   margin: 80px; /* Puedes ajustar el valor según la cantidad de espacio deseada */
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .parallax-content-js {
+    flex-direction: column; /* Cambia a column cuando el ancho de la pantalla es menor o igual a 768px */
+  }
+
+  .parallax-content-js > div {
+    margin-bottom: 20px; /* Puedes ajustar el espacio entre divs en pantallas más pequeñas */
+    font-size: 2vh;
+  }
+}
+
 /*--------------------------Texto con fondo simple---------------------------*/
 .simple-background{
   position: relative;
