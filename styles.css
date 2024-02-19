@@ -29,7 +29,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 .banner {
   position: relative;
   width: 100%;
-  height: calc( 100vh - 50px );
+  height: calc( 100vh);
   background-color: #F5F5F5;
   background-size: cover;
   background-position: center;
@@ -312,7 +312,82 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 }
 
 /*----------------------------Contact info--------------------------------*/
-.contact-info{
-  background-color: black;
-  color: white;    
+#contact-title {
+  margin: 0;
+  background-color: #2F2E2E;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
+
+.contact-info {
+  background-color: #2F2E2E;
+  color: white;
+  display: flex;
+  text-align: center;
+}
+
+.contact-info > div {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 185px 35px; /*Top, right & left, bottom*/
+}
+
+.form-info{
+  text-align:left;
+}
+
+.form-info h3{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#small-text{
+  margin: 30px;
+  text-align: center;
+}
+
+#success-message{
+  color: #198754;
+  text-align:center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.aditional-info p {
+  text-align: center;
+  line-height: 10px;
+
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-info > div {
+    width: 100%;
+  }
+}
+
+/*------------------------------Footer----------------------------*/
+footer p {
+  line-height: 6px;
+}
+
+
+
