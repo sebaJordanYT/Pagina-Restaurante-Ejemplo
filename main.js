@@ -6,6 +6,8 @@ var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector('.logos').appendChild(copy);
 */
 
+
+/*Para el mensaje de confirmacion en el formulario*/
 document.getElementById("my-form").addEventListener("submit", function (event) {
     event.preventDefault();
   
@@ -18,5 +20,12 @@ document.getElementById("my-form").addEventListener("submit", function (event) {
     }, 3000);
   });  
   
+/*Para el efecto parallax*/
+let parallax = document.querySelector('.parallax-js');
 
+function scrollParallax(){
+  let scrollTop = document.documentElement.scrollTop;//scrillTop es la cantidad que baje al hacer scroll
+  parallax.style.transform = 'translateY(' + scrollTop * 1 + 'px)';
+}
 
+window.addEventListener('scroll', scrollParallax);
