@@ -35,7 +35,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   background-position: center;
   transition: all .1s ease-in-out;
   background-image: url('images/pizzaBanner.jpg');
-  animation: bannerEffect 20s infinite linear;
+  animation: bannerEffect 24s infinite linear;
 }
 
 .banner-content {
@@ -177,9 +177,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 
 /*---------------------------Imagen con efecto parallax-------------------------*/
 .parallax{
-  background: #fff url('images/pizzaPortada1B&W.jpg') fixed no-repeat 50% 50%; /*fixed fija el fondo, no repeat es para que no se repita la imagen y lo ultimo la centra*/
-  background-size: cover;
-  position: relative; /*Para poder poner el before despues necesito que sea relative*/
+  background: #fff url('images/pizzaPortada1B&W.jpg') fixed no-repeat center center / cover;
 }
 
 #seccion1{
