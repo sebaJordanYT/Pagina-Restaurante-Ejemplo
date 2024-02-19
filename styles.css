@@ -130,9 +130,11 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   background: linear-gradient(to right, rgba(255,255,255,0), white);
 }
 
+/* Por si quiero que al pasar el cursor se detengan
 .logos:hover .logos-slide {
   animation-play-state: paused;
 }
+*/
 
 .logos-slide{
   display: inline-block;
@@ -176,9 +178,11 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 }
 
 /*---------------------------Imagen con efecto parallax-------------------------*/
-.parallax{
-  background: #fff url('images/pizzaPortada1B&W.jpg') fixed no-repeat center center / cover;
+.parallax {
+  background: #fff url('images/pizzaPortada1B&W.jpg') fixed no-repeat center top / cover;
+  will-change: transform; /* Agrega esta línea */
 }
+
 
 #seccion1{
   width: 100%;
