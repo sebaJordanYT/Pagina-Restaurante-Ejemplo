@@ -426,7 +426,7 @@ button:hover {
   line-height: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .contact-info {
     flex-direction: column;
   }
@@ -437,6 +437,8 @@ button:hover {
 
   .aditional-info p {
     text-align: center;
+    line-height: 5px;
+    font-size: 15px;
   }
 
   form {
