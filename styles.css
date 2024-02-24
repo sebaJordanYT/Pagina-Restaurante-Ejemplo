@@ -424,16 +424,19 @@ button:hover {
 .aditional-info p {
   text-align: center;
   line-height: 10px;
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .contact-info {
     flex-direction: column;
   }
 
   .contact-info > div {
     width: 100%;
+  }
+
+  .aditional-info p {
+    text-align: center;
   }
 
   form {
