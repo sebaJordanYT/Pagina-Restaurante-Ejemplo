@@ -421,11 +421,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-.aditional-info p {
-  text-align: center;
-  line-height: 10px;
-}
-
 @media (max-width: 768px) {
   .contact-info {
     flex-direction: column;
