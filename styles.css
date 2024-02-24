@@ -437,3 +437,40 @@ footer p {
   line-height: 6px;
 }
 
+/*--------------Para la carta-----------------*/
+
+.iframe-container{
+  margin: 0 auto;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  will-change: transform;
+  margin-bottom: 30vh;
+}
+
+
+#menu-iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-body{
+  background-image: url('imagesCompress/menu-fondo.jpg');
+  background-size: cover; /* Puedes ajustar 'cover' según tus necesidades */
+  background-position: center center;
+}
+
+.menu-title{
+  color: white;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+}
