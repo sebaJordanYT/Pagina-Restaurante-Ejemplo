@@ -25,7 +25,9 @@ let parallax = document.querySelector('.parallax-js');
 
 function scrollParallax(){
   let scrollTop = document.documentElement.scrollTop;//scrillTop es la cantidad que baje al hacer scroll
-  parallax.style.transform = 'translateY(' + scrollTop + 'px)';
+  requestAnimationFrame(() => {
+    parallax.style.transform = 'translateY(' + scrollTop + 'px)';
+  });
 }
 
 window.addEventListener('scroll', scrollParallax);
