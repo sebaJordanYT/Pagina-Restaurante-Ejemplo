@@ -178,6 +178,7 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 }
 
 /*---------------------------Imagen con efecto parallax-------------------------*/
+/*
 .parallax {
   background: #fff url('imagesCompress/pizzaPortada1B&W.jpg') fixed no-repeat center top / cover;
   width: 100%;
@@ -199,21 +200,21 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 }
 
 .parallax-content div {
-  margin: 80px; /* Puedes ajustar el valor según la cantidad de espacio deseada */
+  margin: 80px;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   .parallax-content {
-    flex-direction: column; /* Cambia a column cuando el ancho de la pantalla es menor o igual a 768px */
+    flex-direction: column;
   }
 
   .parallax-content > div {
-    margin-bottom: 20px; /* Puedes ajustar el espacio entre divs en pantallas más pequeñas */
+    margin-bottom: 20px;
     font-size: 2vh;
   }
 }
-
+*/
 /*--------------------Parallax con js-------------------------*/
 .contenedor-parallax{
   position: relative;
@@ -260,12 +261,12 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
 
 @media (max-width: 768px) {
   .parallax-content-js {
-    flex-direction: column; /* Cambia a column cuando el ancho de la pantalla es menor o igual a 768px */
+    flex-direction: column;
   }
 
   .parallax-content-js > div {
-    margin-bottom: 20px; /* Puedes ajustar el espacio entre divs en pantallas más pequeñas */
     font-size: 2vh;
+    margin: 40px;
   }
 }
 
