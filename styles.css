@@ -146,6 +146,16 @@ La definición del selector .navbar-nav .nav-item .nav-link especifica que solo 
   margin: 0 40px;
 }
 
+@media (max-width: 768px) {
+  .logos-slide img {
+    height: 35px;
+    margin: 0;
+  }
+  .logos {
+    padding: 10px 0;
+  }
+}
+
 @keyframes slideLogos {
   from {
     transform: translateX(0);
